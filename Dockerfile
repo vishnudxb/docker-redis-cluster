@@ -1,0 +1,23 @@
+From alpine:edge
+
+MAINTAINER Vishnu Nair <me@vishnudxb.me>
+
+RUN mkdir /src
+WORKDIR /src
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apk add --update supervisor ruby ruby-dev redis  && gem install --no-ri --no-rdoc redis
+
+ADD . /src/
+
+COPY redis-trib.rb /usr/bin/redis-trib.rb
+
+COPY redis.ini /etc/supervisor.d/redis.ini
+
+COPY redis-start.sh  /bin/redis-start.sh
+
+RUN chmod +x /bin/redis-start.sh
+
+CMD . /bin/redis-start.sh
+     
