@@ -3,7 +3,7 @@
 [![](https://images.microbadger.com/badges/image/vishnunair/docker-redis-cluster.svg)](https://microbadger.com/images/vishnunair/docker-redis-cluster)
 [![](https://images.microbadger.com/badges/version/vishnunair/docker-redis-cluster.svg)](https://microbadger.com/images/vishnunair/docker-redis-cluster)
 
-A small docker container for redis cluster ( Version 3.0.4 )
+A small docker container for redis cluster
 
 *You can pull this image from the docker hub*
 
