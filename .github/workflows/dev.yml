@@ -2,7 +2,6 @@ name: Run CI Testing
 on:
   push:
     paths-ignore:  # Don't trigger deployment when any of these files/folders changes.
-      - '.github/**'
       - 'README.md'
     branches:
       - master
