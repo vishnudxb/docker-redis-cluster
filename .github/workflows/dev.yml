@@ -27,12 +27,12 @@ jobs:
     - name: Test redis cluster
       uses: vishnudxb/redis-cluster@1.0.5
       with:
-        master1-port: 5000
-        master2-port: 5001
-        master3-port: 5002
-        slave1-port: 5003
-        slave2-port: 5004
-        slave3-port: 5005
+        master1-port: 6000
+        master2-port: 6001
+        master3-port: 6002
+        slave1-port: 6003
+        slave2-port: 6004
+        slave3-port: 6005
 
      # Running Test
     - name: Running Test
