@@ -1,6 +1,4 @@
-From alpine:edge
-
-MAINTAINER Vishnu Nair <me@vishnudxb.me>
+FROM alpine:edge
 
 RUN mkdir /src
 WORKDIR /src
