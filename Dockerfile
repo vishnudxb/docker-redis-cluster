@@ -1,6 +1,7 @@
 FROM alpine:edge
 
 RUN mkdir /src
+
 WORKDIR /src
 
 ENV DEBIAN_FRONTEND noninteractive
