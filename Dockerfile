@@ -11,9 +11,7 @@ RUN apk add --update supervisor ruby ruby-dev redis  && gem install --no-documen
 ADD . /src/
 
 COPY redis-trib.rb /usr/bin/redis-trib.rb
-
 COPY redis.ini /etc/supervisor.d/redis.ini
-
 COPY redis-start.sh  /bin/redis-start.sh
 
 RUN chmod +x /bin/redis-start.sh
