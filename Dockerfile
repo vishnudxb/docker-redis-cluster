@@ -6,7 +6,7 @@ WORKDIR /src
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apk add --update supervisor ruby ruby-dev redis  && gem install --no-document redis
+RUN apk add --update supervisor ruby ruby-dev redis openssl && gem install --no-document redis
 
 ADD . /src/
 
