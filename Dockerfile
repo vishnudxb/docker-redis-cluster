@@ -7,7 +7,6 @@ WORKDIR /src
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apk add --update supervisor ruby ruby-dev redis openssl && gem install --no-document redis
-
 ADD . /src/
 
 COPY redis-trib.rb /usr/bin/redis-trib.rb
