@@ -24,7 +24,7 @@ jobs:
         submodules: true
 
     - name: Test redis cluster
-      uses: vishnudxb/redis-cluster@1.0.5
+      uses: vishnudxb/redis-cluster@1.0.6
       with:
         master1-port: 6000
         master2-port: 6001
