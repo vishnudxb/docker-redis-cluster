@@ -13,7 +13,6 @@ ADD . /src/
 COPY redis-trib.rb /usr/bin/redis-trib.rb
 COPY redis.ini /etc/supervisor.d/redis.ini
 COPY redis-start.sh  /bin/redis-start.sh
-
 RUN chmod +x /bin/redis-start.sh
 
 CMD . /bin/redis-start.sh     
