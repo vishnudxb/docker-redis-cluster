@@ -1,5 +1,4 @@
 FROM alpine:edge
-
 RUN mkdir /src
 
 WORKDIR /src
