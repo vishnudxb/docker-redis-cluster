@@ -24,7 +24,7 @@ jobs:
         submodules: true
 
     - name: Test redis cluster
-      uses: vishnudxb/redis-cluster@1.0.7
+      uses: vishnudxb/redis-cluster@1.0.9
       with:
         master1-port: 6000
         master2-port: 6001
@@ -32,6 +32,7 @@ jobs:
         slave1-port: 6003
         slave2-port: 6004
         slave3-port: 6005
+        sleep-duration: 20
 
      # Running Test
     - name: Running Test
