@@ -32,7 +32,6 @@ jobs:
         slave1-port: 6003
         slave2-port: 6004
         slave3-port: 6005
-        sleep-duration: 20
 
      # Running Test
     - name: Running Test
