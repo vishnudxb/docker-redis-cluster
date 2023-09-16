@@ -34,7 +34,6 @@ jobs:
         slave3-port: 6005
         sleep-duration: 10
 
-     # Running Test
     - name: Running Test
       run: |
          sudo apt-get install -y redis-tools
