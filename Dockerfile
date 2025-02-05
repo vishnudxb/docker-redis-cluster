@@ -10,7 +10,7 @@ RUN apk add --update supervisor ruby ruby-dev openssl wget tar build-base && \
 
 RUN wget https://download.redis.io/releases/redis-7.4.2.tar.gz && \
     tar xzf redis-7.4.2.tar.gz && \
-    cd redis-7.4.1 && \
+    cd redis-7.4.2 && \
     make && \
     make install
 
