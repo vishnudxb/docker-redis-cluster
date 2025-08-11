@@ -8,13 +8,13 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apk add --update supervisor ruby ruby-dev openssl wget tar build-base && \
     gem install --no-document redis
 
-RUN wget https://download.redis.io/releases/redis-7.4.2.tar.gz && \
-    tar xzf redis-7.4.2.tar.gz && \
-    cd redis-7.4.2 && \
+RUN wget https://download.redis.io/releases/redis-8.2.0.tar.gz && \
+    tar xzf redis-8.2.0.tar.gz && \
+    cd redis-8.2.0 && \
     make && \
     make install
 
-RUN rm -rf /src/redis-7.4.2* /var/cache/apk/*
+RUN rm -rf /src/redis-8.2.0* /var/cache/apk/*
     
 ADD . /src/
 
